@@ -6,7 +6,7 @@ spring:
     name: disaster-backend
   data:
     mongodb:
-      uri: ${MONGODB_URI:mongodb://localhost:27017/disaster_db}
+      uri: ${MONGODB_URI}
   mail:
     host: ${MAIL_HOST:smtp.gmail.com}
     port: ${MAIL_PORT:587}
