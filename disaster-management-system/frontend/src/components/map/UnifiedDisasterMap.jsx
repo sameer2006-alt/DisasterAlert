@@ -11,6 +11,7 @@ import AiThreatPanel from "./panels/AiThreatPanel";
 import AlertStreamBar from "./panels/AlertStreamBar";
 import SimulationControls from "./panels/SimulationControls";
 import RegionSelectorPanel from "./panels/RegionSelectorPanel";
+import SocialIntelligencePanel from "./panels/SocialIntelligencePanel";
 
 // Effects
 import RadarSweep from "./effects/RadarSweep";
@@ -134,6 +135,7 @@ export default function UnifiedDisasterMap({
       <CommandHeader readOnly={readOnly} />
       <OverlayTogglePanel activeLayers={activeLayers} toggleLayer={toggleLayer} />
       <AiThreatPanel center={activeCenter} />
+      {!readOnly && <SocialIntelligencePanel />}
       {!readOnly && <SimulationControls onSimulate={onSimulate} />}
       <AlertStreamBar alerts={alerts} />
       <RadarSweep />

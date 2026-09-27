@@ -70,3 +70,7 @@ export const climateApi = {
   intelligence: (lat = 19.076, lng = 72.8777, hourOffset = 0) =>
     api.get('/api/climate/intelligence', { params: { lat, lng, hourOffset } }),
 }
+
+export const socialApi = {
+  analyze: (text) => api.post('/api/social/analyze', { text }),
+}
