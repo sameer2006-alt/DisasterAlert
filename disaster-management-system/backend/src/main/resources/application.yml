@@ -41,6 +41,9 @@ app:
     api-key: ""
   gee:
     service-url: ""
+  nlp:
+    service-url: ${NLP_SERVICE_URL:http://127.0.0.1:8000}
+    timeout-ms: ${NLP_TIMEOUT_MS:10000}
   twilio:
     account-sid: ""
     auth-token: ""

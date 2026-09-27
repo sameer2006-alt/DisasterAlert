@@ -68,10 +68,11 @@ public class SecurityConfig {
         .requestMatchers(HttpMethod.POST, "/api/rescue/request").permitAll()
         .requestMatchers("/api/rescue/nearby").permitAll()
 
-        // ── Public / Integrations / AI ────────────────────────────────
+        // ── Public / Integrations / AI / Social ───────────────────────
         .requestMatchers("/api/public/**").permitAll()
         .requestMatchers("/api/integrations/**").permitAll()
         .requestMatchers("/api/ai/**").permitAll()
+        .requestMatchers("/api/social/**").permitAll()
 
         // ── Health check for UptimeRobot — NO method restriction ──────
         .requestMatchers("/api/health").permitAll()

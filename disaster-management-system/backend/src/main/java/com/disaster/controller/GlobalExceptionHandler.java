@@ -31,6 +31,12 @@ public class GlobalExceptionHandler {
                 ));
     }
 
+    @ExceptionHandler(com.disaster.exception.NlpServiceException.class)
+    public ResponseEntity<Map<String, String>> handleNlpServiceException(com.disaster.exception.NlpServiceException ex) {
+        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
+                .body(Map.of("error", ex.getMessage()));
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Map<String, String>> handleGeneral(Exception ex) {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
