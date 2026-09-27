@@ -25,14 +25,42 @@ DISASTER_KEYWORDS = {
         "fire",
         "building caught fire",
         "burning",
-        "smoke"
+        "smoke",
+        "blaze",
+        "flames",
+        "caught fire"
     ],
 
     "landslide": [
         "landslide",
         "fallen rocks",
         "rocks blocked",
-        "mudslide"
+        "mudslide",
+        "hillside collapse",
+        "boulders",
+        "slope collapse"
+    ],
+
+    "earthquake": [
+        "earthquake",
+        "tremor",
+        "tremors",
+        "shaking",
+        "quake",
+        "aftershock",
+        "buildings collapsed",
+        "cracked walls",
+        "building cracked",
+        "buildings have cracked"
+    ],
+
+    "cyclone": [
+        "cyclone",
+        "storm surge",
+        "high winds",
+        "uprooted trees",
+        "cyclonic winds",
+        "trees uprooted"
     ]
 }
 
@@ -54,7 +82,22 @@ EMERGENCY_KEYWORDS = {
     "water entering": 15,
     "water has entered": 15,
     "water inside": 15,
-    "flooded": 15
+    "flooded": 15,
+    "collapsed": 25,
+    "buildings collapsed": 30,
+    "cracked": 15,
+    "shaking": 15,
+    "tremors": 15,
+    "buried": 30,
+    "missing": 20,
+    "smoke": 15,
+    "flames": 20,
+    "burning": 15,
+    "high winds": 15,
+    "uprooted trees": 15,
+    "storm surge": 20,
+    "evacuate": 20,
+    "evacuated": 20
 }
 
 
@@ -83,8 +126,12 @@ NEED_KEYWORDS = {
     ],
 
     "shelter": [
-        "shelter"
-    ]
+        "shelter",
+        "evacuate",
+        "evacuated",
+        "homeless"
+    ],
+    
 }
 
 
@@ -214,6 +261,8 @@ DISASTER_BONUS = {
     "flood": 10,
     "fire": 30,
     "landslide": 25,
+    "earthquake": 30,
+    "cyclone": 20,
     "unknown": 0
 }
 
